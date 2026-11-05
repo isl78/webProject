@@ -25,8 +25,6 @@ a {
     color: #FFFFFF;
 }
 
-
-
 .glows {
     position: absolute;
     inset: 0;
@@ -78,15 +76,11 @@ a {
     opacity: 0.15;
 }
 
-/* ---------- Общее ---------- */
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 120px;
 }
-
-
 
 .head {
     display: flex;
@@ -143,8 +137,6 @@ a {
     display: none;
 }
 
-
-
 .first-section {
     display: flex;
     align-items: center;
@@ -198,7 +190,8 @@ a {
     object-fit: cover;
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hero-right-img {
@@ -223,8 +216,6 @@ a {
     bottom: 50px;
     left: 550px;
 }
-
-
 
 .second-section {
     margin-top: 170px;
@@ -277,7 +268,6 @@ a {
     background-color: #5454D4;
     cursor: pointer;
 }
-
 
 .section3 {
     margin-top: 150px;
@@ -413,7 +403,6 @@ a {
     display: none;
 }
 
-
 .section5 {
     background-color: #1E1E20;
     margin-top: 170px;
@@ -464,7 +453,6 @@ a {
     top: 70px;
 }
 
-
 .foot {
     margin: 50px 0;
     display: flex;
@@ -480,6 +468,7 @@ a {
 .foot-p {
     color: #FFFFFF;
 }
+
 .to-top {
     display: none;
 }
@@ -539,29 +528,13 @@ button,
 button:active {
     transform: scale(0.96);
 }
-.sqrt {
-    width: 470px;
-    height: 470px;
-    object-fit: cover;
-    position: absolute;
-    right: 0;
-    top: 60%;
-    transform: translateY(-50%);
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@media (max-width: 1100px) {
+    .sqrt {
+        width: 340px;
+        height: 340px;
     }
 }
-
-
 
 @media (max-width: 900px) {
     .to-top {
@@ -592,14 +565,11 @@ button:active {
     }
 }
 
-
-
 @media (max-width: 768px) {
     .container {
         padding: 0 24px;
     }
 
-   
     .head {
         position: relative;
         padding-top: 40px;
@@ -628,7 +598,6 @@ button:active {
 
     .head-nav.open {
         display: flex;
-        animation: fadeIn 0.25s ease forwards;
     }
 
     .burger {
@@ -660,7 +629,6 @@ button:active {
         width: 12px;
     }
 
-    /* Первая секция */
     .first-section {
         flex-direction: column;
         align-items: flex-start;
@@ -687,6 +655,7 @@ button:active {
 
     .sqrt {
         position: static;
+        transform: none;
         width: 64px;
         height: 64px;
         border-radius: 50%;
@@ -720,7 +689,6 @@ button:active {
         width: 24px;
     }
 
-    /* Вторая секция */
     .second-section {
         margin-top: 80px;
     }
@@ -750,7 +718,6 @@ button:active {
         width: 20px;
     }
 
-    /* Навыки */
     .sec3-start-h2 {
         max-width: 327px;
         font-size: 36px;
@@ -780,7 +747,6 @@ button:active {
         gap: 60px;
     }
 
-    /* Проекты */
     .sec4-h3 {
         max-width: 327px;
         font-size: 36px;
@@ -814,7 +780,6 @@ button:active {
         bottom: 30px;
     }
 
-    /* Контакты */
     .section5 {
         margin-top: 60px;
     }
@@ -842,7 +807,6 @@ button:active {
         right: 20px;
     }
 
-    /* Футер */
     .foot {
         flex-direction: column;
         gap: 24px;
